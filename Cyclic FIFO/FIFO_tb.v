@@ -1,9 +1,12 @@
 module FIFO_tb();
+    
+    parameter DATA = 8;
+    parameter ADDR = 4;
 
     reg rst, clk;
-    reg [7:0]write_data;
+    reg [DATA-1:0]write_data;
     reg write_req, read_req;
-    wire [7:0]read_data;
+    wire [DATA-1:0]read_data;
     wire read_data_valid;
     wire fifo_empty, fifo_full;
     wire fifo_of, fifo_uf;
@@ -21,8 +24,6 @@ FIFO dut(
          .fifo_of(fifo_of),
          .fifo_uf(fifo_uf)
          );
-    //parameter DATA = 8;
-    parameter ADDR = 4;
     integer i = 0;//, j = 0;
     
     initial
@@ -36,6 +37,8 @@ FIFO dut(
         rst = 0;
         #10;
         rst = 1;
+//        #5;
+//        rst = 1;
     end
 
     always @(posedge clk)
