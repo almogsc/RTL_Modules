@@ -36,8 +36,6 @@ FIFO dut(
         rst = 0;
         #10;
         rst = 1;
-//        #5;
-//        rst = 1;
     end
 
     always @(posedge clk)
