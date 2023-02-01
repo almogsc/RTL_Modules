@@ -1,15 +1,16 @@
-module FIFO(
+module FIFO #(
+    parameter DATA = 8,
+    parameter ADDR = 4)
+    (
     input rst,
     input clk,
-    input [7:0]write_data,
+    input [DATA-1:0]write_data,
     input write_req, read_req,
-    output reg [7:0]read_data,
+    output reg [DATA-1:0]read_data,
     output reg read_data_valid,
     output fifo_empty, fifo_full,
     output reg fifo_of, fifo_uf
     );
-    parameter DATA = 8;
-    parameter ADDR = 4;
     
     integer i;
     
@@ -63,8 +64,5 @@ module FIFO(
     end
     
     assign fifo_empty = (filled == 0) && rst ? 1 : 0;
-    assign fifo_full = (filled == 2**ADDR) && rst ? 1 : 0;
-    
-    
-    
+    assign fifo_full = (filled == 2**ADDR) && rst ? 1 : 0;   
 endmodule
