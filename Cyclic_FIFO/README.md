@@ -9,13 +9,13 @@ The module reads data if the 'read_req' is '1' and the FIFO isn't empty and the 
 
 ## Interface
 The module's interface is as follows:
-```
-<span style="color:read">input</span>. rst,
-input clk,
-input [DATA-1:0]write_data,
-input write_req, read_req,
-output reg [DATA-1:0]read_data,
-output reg read_data_valid,
-output fifo_empty, fifo_full,
-output reg fifo_of, fifo_uf
+```verilog
+input rst                       - Reset module
+input clk                       - Module's clock
+input [DATA-1:0]write_data      - Data to be written to the fifo
+input write_req, read_req       - write\read requests
+output reg [DATA-1:0]read_data  - Data read from the fifo
+output reg read_data_valid      - Flag marks the read data is valid
+output fifo_empty, fifo_full    - Flags to mark if the fifo is empty\full
+output reg fifo_of, fifo_uf     - Flags to mark if the fifo is write\read requests cause overflow\underflow
 ```
