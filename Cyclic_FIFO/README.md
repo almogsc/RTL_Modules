@@ -16,6 +16,6 @@ input [DATA-1:0]write_data      - Data to be written to the fifo
 input write_req, read_req       - write\read requests
 output reg [DATA-1:0]read_data  - Data read from the fifo
 output reg read_data_valid      - Flag marks the read data is valid
-output fifo_empty, fifo_full    - Flags to mark if the fifo is empty\full
-output reg fifo_of, fifo_uf     - Flags to mark if the fifo is write\read requests cause overflow\underflow
+output fifo_empty, fifo_full    - Flags to mark the fifo is empty\full
+output reg fifo_of, fifo_uf     - Flags to mark the fifo is write\read requests cause overflow\underflow
 ```
