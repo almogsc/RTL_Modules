@@ -11,7 +11,7 @@ The 'read_req' will empty an entry from the FIFO and the 'write_req' will fill a
 ## Interface
 The module's interface is as follows:
 ```verilog
-input rst                       - Reset module
+input rst                       - Module's reset
 input clk                       - Module's clock
 input [DATA-1:0]write_data      - Data to be written to the fifo
 input write_req, read_req       - write\read requests
