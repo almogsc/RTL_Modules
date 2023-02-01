@@ -1,8 +1,8 @@
-#FIFO Module
+# FIFO Module
 
 This module implements a FIFO 
 
-##Functionality
+## Functionality
 The module has an address size of 'ADDR = 4' bits and data size of 'DATA = 8' bits.
 The module writes data 'write_data' if the 'write_req' is '1' and the FIFO isn't full. Otherwise, if the FIFO is full the 'fifo_of' flag turns on.
 The module reads data if the 'read_req' is '1' and the FIFO isn't empty and the 'read_data_valid' turn on. Otherwise, if the FIFO is empty the 'fifo_uf' flag turns on.
