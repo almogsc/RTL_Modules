@@ -3,10 +3,9 @@
 This module detects both the rising and falling edges of a given input
 
 ## Functionality
-The module raises a 'rise' flag when a rising edge is detected.
-
-The module raises a 'fall' flag when a falling edge is detected.
-The module raises a 'rise_or_fall' flag when an edge is detected.
+The module raises a 'rise' flag when a rising edge is detected.  
+The module raises a 'fall' flag when a falling edge is detected.  
+The module raises a 'rise_or_fall' flag when an edge is detected.  
 
 ## Interface
 ```verilog
