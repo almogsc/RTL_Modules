@@ -1,6 +1,6 @@
 # FIFO Module
 
-This module implements a FIFO 
+This module implements a synchronous FIFO with an unsynchronous reset.
 
 ## Functionality
 The module has an address size of 'ADDR = 4' bits and data size of 'DATA = 8' bits.
