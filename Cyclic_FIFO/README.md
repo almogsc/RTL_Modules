@@ -10,7 +10,7 @@ The module reads data if the 'read_req' is '1' and the FIFO isn't empty and the 
 ## Interface
 The module's interface is as follows:
 ```
-input rst,
+<span style="color:read">input</span>. rst,
 input clk,
 input [DATA-1:0]write_data,
 input write_req, read_req,
