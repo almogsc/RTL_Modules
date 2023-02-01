@@ -1,11 +1,12 @@
 module Min_Max(
     input clk,
     input rst,
-    input [7:0]A,
-    input [7:0]B,
-    output reg [7:0]Min,
-    output reg [7:0]Max
+    input [DATA-1:0]A,
+    input [DATA-1:0]B,
+    output reg [DATA-1:0]Min,
+    output reg [DATA-1:0]Max
     );
+    parameter DATA = 8;
     
     always @(posedge clk)
     begin
