@@ -13,3 +13,5 @@ input clk                       - Module's clock
 input in                        - Module's input, changes every clock period
 output out                      - Module's output, indicates when the sequence was detected
 ```
+
+![Sequence_Detector](https://user-images.githubusercontent.com/76109073/216690505-2d72862f-fd3b-408f-8276-5f89fa8ab232.JPG)
