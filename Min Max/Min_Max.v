@@ -8,9 +8,9 @@ module Min_Max(
     );
     parameter DATA = 8;
     
-    always @(posedge clk)
+    always @(posedge clk or negedge rst)
     begin
-        if (rst)
+        if (!rst)
         begin
             Min <= 0;
             Max <= 0;
