@@ -1,6 +1,6 @@
 module Padovan_Sequence_tb();
-    
-    wire [15:0]f_n, n;
+        
+    wire [16-1:0]f_n, n;
     wire valid;
     reg clk, rst;
     Padovan_Sequence dut(.clk(clk), .rst(rst), .f_n(f_n), .n(n), .valid(valid));
