@@ -16,6 +16,6 @@ output [2:0]out                 - Module's output, indicates when the sequence w
 ```
 
 ##  State diagram
-Here is a diagram of different states of the module:
-![FSM](https://user-images.githubusercontent.com/76109073/216827306-1b3f555b-3206-4077-bfcf-50d1fec1187b.JPG)
+Here is a diagram of different states of the module:  
+![FSM](https://user-images.githubusercontent.com/76109073/216827306-1b3f555b-3206-4077-bfcf-50d1fec1187b.JPG)  
  The input and output are written next to the arrow. i.e. "input/ouput".
