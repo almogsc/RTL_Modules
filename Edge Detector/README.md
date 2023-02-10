@@ -1,6 +1,7 @@
 # Edge Detector Module
 
-This module detects both the rising and falling edges of a given input.
+This module detects both the rising and falling edges of a given input.  
+This module has an asynchronous reset.
 
 ## Functionality
 The module raises a 'rise' flag when a rising edge is detected.  
