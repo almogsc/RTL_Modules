@@ -4,7 +4,7 @@ This module divides a given clock frequency by two.
 This module has an asynchronous reset.
 
 ## Functionality
-The module's output changes signal with a period two times larger than it's input clock.  
+The module's output changes signal with a period two times larger than it's input clock, i.e. a frequency divided by two.  
 The reset is essential for initial loading to the output.  
 
 ## Interface
