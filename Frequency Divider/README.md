@@ -1,10 +1,10 @@
 # Frequency Divider Module
 
-This module divides a given clock frequency by two.
-This module has an asynchronous reset.
+These modules divide a given clock frequency by two or N.
+These modules have an asynchronous reset.
 
 ## Functionality
-The module's output changes signal with a period two times larger than it's input clock, i.e. a frequency divided by two.  
+The modules' output changes the input clock signal period to two or N times larger, i.e. the output is a signal with a frequency divided by two or N.  
 The reset is essential for initial loading to the output.  
 
 ## Interface
