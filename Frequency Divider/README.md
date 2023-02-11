@@ -1,6 +1,6 @@
 # Frequency Divider Module
 
-These modules divide a given clock frequency by two or N.
+These modules divide a given clock frequency by two or N.  
 These modules have an asynchronous reset.
 
 ## Functionality
