@@ -12,5 +12,5 @@ The modules should have the following interface:
 ```verilog
     input clk       -- Module's input clock
     input rst       -- Module's input reset
-    output out      -- Module's output the divided clock frequency
+    output out      -- Module's output, the divided clock frequency
 ```
