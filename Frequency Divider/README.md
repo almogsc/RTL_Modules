@@ -8,6 +8,7 @@ The modules' output changes the input clock signal period to two or N times larg
 The reset is essential for initial loading to the output.  
 
 ## Interface
+The modules should have the following interface:
 ```verilog
     input clk       -- Module's input clock
     input rst       -- Module's input reset
